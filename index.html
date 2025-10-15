@@ -7,48 +7,19 @@
   <title>ColorFunPrints - Free Coloring Pages for Kids</title>
   <link rel="icon" href="favicon.ico" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #fdfdfd;
-      color: #333;
-      text-align: center;
-    }
-    header {
-      background-color: #ffcc70;
-      padding: 1.5em;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-    h1 {
-      margin: 0;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 20px;
-    }
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border: 2px solid #eee;
-      border-radius: 8px;
-      transition: transform 0.2s;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-    footer {
-      background-color: #ffcc70;
-      padding: 10px;
-      font-size: 0.9em;
-      margin-top: 30px;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; background: #fdfdfd; color: #333; text-align: center; }
+    header { background-color: #ffcc70; padding: 1.5em; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    h1 { margin: 0; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 20px; }
+    .gallery img { width: 100%; height: auto; border: 2px solid #eee; border-radius: 8px; transition: transform 0.2s; }
+    .gallery img:hover { transform: scale(1.05); }
+    footer { background-color: #ffcc70; padding: 10px; font-size: 0.9em; margin-top: 30px; }
+    .ad { margin: 20px auto; max-width: 100%; }
   </style>
-  <!-- Google AdSense placeholder -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4494630573033274"
-     crossorigin="anonymous"></script>
 
+  <!-- AdSense (global) -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4494630573033274" crossorigin="anonymous"></script>
+  <meta name="google-adsense-account" content="ca-pub-4494630573033274" />
 </head>
 <body>
   <header>
@@ -56,8 +27,15 @@
     <p>Free printable coloring pages for kids</p>
   </header>
 
-  <div id="ad-top" style="margin:20px 0;">
-    <!-- Google AdSense Ad slot placeholder -->
+  <!-- Responsive ad (top) -->
+  <div class="ad">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-4494630573033274"
+         data-ad-slot="0000000000"  
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
   <section class="gallery" id="gallery">
@@ -67,8 +45,15 @@
     <img src="images/unicorn.png" alt="Unicorn Coloring Page" />
   </section>
 
-  <div id="ad-bottom" style="margin:20px 0;">
-    <!-- Another AdSense slot placeholder -->
+  <!-- Responsive ad (bottom) -->
+  <div class="ad">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-4494630573033274"
+         data-ad-slot="1111111111"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
   <footer>
@@ -76,12 +61,10 @@
   </footer>
 
   <script>
-    // Example: simple tracking of image clicks (could be extended for analytics)
+    // Simple click-to-download behaviour
     document.querySelectorAll('.gallery img').forEach(img => {
       img.addEventListener('click', () => {
-        alert('Downloading ' + img.alt + '!');
-        // Simulate download action (replace with actual download link)
-        window.location.href = img.src;
+        window.location.href = img.src; // replace with actual download links if different
       });
     });
   </script>
