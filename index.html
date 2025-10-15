@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Free printable black and white coloring pages for kids! Download and color your favorite drawings." />
+  <title>ColorFunPrints - Free Coloring Pages for Kids</title>
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #fdfdfd;
+      color: #333;
+      text-align: center;
+    }
+    header {
+      background-color: #ffcc70;
+      padding: 1.5em;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin: 0;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border: 2px solid #eee;
+      border-radius: 8px;
+      transition: transform 0.2s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #ffcc70;
+      padding: 10px;
+      font-size: 0.9em;
+      margin-top: 30px;
+    }
+  </style>
+  <!-- Google AdSense placeholder -->
+  <meta name="google-adsense-account" content="ca-pub-XXXXXXXXXXXX" />
+</head>
+<body>
+  <header>
+    <h1>🎨 ColorFunPrints</h1>
+    <p>Free printable coloring pages for kids</p>
+  </header>
+
+  <div id="ad-top" style="margin:20px 0;">
+    <!-- Google AdSense Ad slot placeholder -->
+  </div>
+
+  <section class="gallery" id="gallery">
+    <img src="images/cat.png" alt="Cat Coloring Page" />
+    <img src="images/dog.png" alt="Dog Coloring Page" />
+    <img src="images/dinosaur.png" alt="Dinosaur Coloring Page" />
+    <img src="images/unicorn.png" alt="Unicorn Coloring Page" />
+  </section>
+
+  <div id="ad-bottom" style="margin:20px 0;">
+    <!-- Another AdSense slot placeholder -->
+  </div>
+
+  <footer>
+    <p>&copy; 2025 ColorFunPrints. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Example: simple tracking of image clicks (could be extended for analytics)
+    document.querySelectorAll('.gallery img').forEach(img => {
+      img.addEventListener('click', () => {
+        alert('Downloading ' + img.alt + '!');
+        // Simulate download action (replace with actual download link)
+        window.location.href = img.src;
+      });
+    });
+  </script>
+</body>
+</html>
