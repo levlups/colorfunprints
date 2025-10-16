@@ -1,1 +1,2 @@
-Redirect 301 /ads.txt https://srv.adstxtmanager.com/19390/colorfunprints.com
+google.com, pub-1234567890123456, DIRECT, f08c47fec0942fa0
+ezoic.com, 19390, RESELLER, f08c47fec0942fa0  
