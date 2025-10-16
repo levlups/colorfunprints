@@ -1,1 +1,1 @@
-google.com, pub-4494630573033274, DIRECT, f08c47fec0942fa0
+Redirect 301 /ads.txt https://srv.adstxtmanager.com/19390/colorfunprints.com
